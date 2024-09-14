@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-40dp">
+
+        <!-- Título grande -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="144dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Moneda a Moneda"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <!-- Texto de bienvenida -->
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:text="Bienvenido Usuario, para comenzar ingrese el dinero inicial que posee"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!-- Texto 'Ingrese el monto' -->
+        <TextView
+            android:id="@+id/tv_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Ingrese el monto"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- Input de monto -->
+        <EditText
+            android:id="@+id/et_monto_inicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:hint="__________________"
+            android:inputType="numberDecimal|numberSigned"
+            android:maxLength="10" />
+
+        <!-- Aclaración sobre saldo negativo -->
+        <TextView
+            android:id="@+id/tv_aclaracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Si el saldo es negativo, ingrese el monto precedido del símbolo -(menos)"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Botón Iniciar -->
+        <Button
+            android:id="@+id/btn_iniciar"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:padding="12dp"
+            android:text="Iniciar"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

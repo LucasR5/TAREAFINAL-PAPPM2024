@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moneda a Moneda"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <!-- Subtítulo: Ingrese el motivo del egreso -->
+    <TextView
+        android:id="@+id/tv_motivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese el motivo del egreso"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Campo de entrada para el motivo del egreso -->
+    <EditText
+        android:id="@+id/input_motivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Motivo del egreso"
+        android:backgroundTint="#1E88E5"
+        android:padding="10dp"
+        android:textSize="16sp"/>
+
+    <!-- Subtítulo: Monto -->
+    <TextView
+        android:id="@+id/tv_monto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monto"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Campo de entrada para el monto -->
+    <EditText
+        android:id="@+id/input_monto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monto"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#1E88E5"
+        android:padding="10dp"
+        android:textSize="16sp"/>
+
+    <!-- Subtítulo: Tipo de egreso -->
+    <TextView
+        android:id="@+id/tv_tipo_egreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregue el tipo de egreso"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Combo box (Spinner) para seleccionar el tipo de egreso -->
+    <Spinner
+        android:id="@+id/spinner_tipos_egreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1E88E5"/>
+
+    <!-- Botón de aceptar -->
+    <Button
+        android:id="@+id/btn_aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E88E5"
+        android:padding="12dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"/>
+</LinearLayout>

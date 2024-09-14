@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moneda A Moneda"
+            android:textSize="56sp"
+            android:padding="30dp"
+            android:textColor="#0033A0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"/>
+
+        <!-- Texto de instrucción -->
+        <TextView
+            android:id="@+id/texto_instruccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrese el nombre del tipo de Egreso"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="26dp"
+            android:layout_below="@id/titulo"
+            />
+
+        <!-- Input para nombre del tipo de gasto -->
+        <EditText
+            android:id="@+id/input_nombre_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del tipo de gasto"
+            android:padding="12dp"
+            android:textSize="22sp"
+            android:layout_below="@id/texto_instruccion"
+            android:layout_marginBottom="150dp"
+            />
+
+        <!-- Botón de confirmar -->
+        <Button
+            android:id="@+id/boton_confirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#0033A0"
+            android:layout_below="@id/input_nombre_tipo"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
